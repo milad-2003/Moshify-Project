@@ -11,6 +11,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 /*Typography*/
@@ -109,14 +111,17 @@ a {
 
 .badge--primary {
   background: var(--color-primary);
+  border: 1px solid white;
 }
 
 .badge--secondary {
   background: var(--color-secondary);
+  border: 1px solid white;
 }
 
 .badge--small {
   font-size: 1.6rem;
+  margin-left: 15px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -308,5 +313,121 @@ a {
   .search-icon {
     width: 25px;
     height: 25px;
+  }
+}
+
+/*Cards*/
+
+.plan {
+  margin: 3rem;
+}
+
+.card {
+  margin: 3rem auto;
+  box-shadow: 0 0 10px var(--color-border);
+  color: #fff;
+  border-radius: 10px;
+  width: 400px;
+  height: 650px;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+}
+
+.card__header {
+  padding: 3rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.plan__name {
+  color: #fff;
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2rem;
+}
+
+.plan__description {
+  display: block;
+  font-size: 2rem;
+}
+
+.card__body {
+  padding: 3rem;
+  height: 422.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__header {
+  position: relative;
+}
+
+.popular-image {
+  width: 110px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .card {
+    flex-basis: 1;
+    width: 335px;
+    height: 575px;
+    margin: 1rem;
+  }
+
+  .plan__name {
+    font-size: 2rem;
+  }
+
+  .plan__price {
+    font-size: 5rem;
+  }
+
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+
+  .plan__description {
+    font-size: 1.6rem;
+  }
+
+  .card__body {
+    height: 390px;
+  }
+
+  .card--primary {
+    height: 600px;
+  }
+
+  .card--primary .card__header {
+    height: 224px;
+  }
+
+  .card--primary .plan__description {
+    margin-top: 1rem;
   }
 }
