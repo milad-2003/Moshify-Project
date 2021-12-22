@@ -255,6 +255,11 @@ a {
   background: var(--color-headings);
 }
 
+.btn--stretched {
+  padding-right: 6rem;
+  padding-left: 6rem;
+}
+
 .btn--block {
   display: inline-block;
   width: 100%;
@@ -630,5 +635,47 @@ a {
     position: absolute;
     top: 3rem;
     right: -32px;
+  }
+}
+
+/*Callout*/
+
+.callout {
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  margin-top: 0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .btn {
+    justify-self: start;
+    margin-left: 3rem;
+  }
+
+  .callout .grid__1x2 {
+    grid-template-columns: 1fr auto;
   }
 }
