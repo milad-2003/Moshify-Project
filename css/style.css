@@ -208,6 +208,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
+  outline: none;
   padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
@@ -289,15 +290,14 @@ a {
 
 .input-group {
   border: 1px solid var(--color-border);
-  border-radius: 30px;
-  box-shadow: 0 0 5px black;
+  border-radius: 40px;
   display: flex;
 }
 
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem;
+  padding: 2.5rem;
 }
 
 .input-group .btn {
@@ -840,5 +840,31 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/*Domain Block*/
+
+.block--domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.domain-block__prices {
+  display: grid;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+@media screen and (min-width: 768px) {
+  .domain-block__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
