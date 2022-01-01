@@ -683,7 +683,6 @@ a {
 .collapsible__header {
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
 }
 
 .collapsible__heading {
@@ -691,27 +690,23 @@ a {
   font-size: 3rem;
 }
 
-.chevron {
-  background: #222;
-  border-radius: 100%;
-  display: inline-block;
-  text-align: center;
-  transform: rotate(0);
-  transition: transform 0.5s;
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
 }
 
 .collapsible__content {
   max-height: 0;
-  opacity: 0;
   overflow: hidden;
-  transition: all 0.8s;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
-.collapsible--expand .chevron {
-  transform: rotate(90deg);
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
 }
 
-.collapsible--expand .collapsible__content {
+.collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
 }
@@ -756,4 +751,69 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/*Navigation Bar*/
+
+.nav {
+  background: #000;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav--list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav--item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav--item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+
+.nav--item > a:hover {
+  color: #fff;
+}
+
+.nav__toggler {
+  opacity: 50%;
+  align-self: center;
+  cursor: pointer;
+}
+
+.logo {
+  transform: translateY(5px);
+}
+
+.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  transition: opacity 0.3s, box-shadow 0.3s;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav--list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    align-self: center;
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .nav--item {
+    border: 0;
+  }
 }
