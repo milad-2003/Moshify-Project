@@ -209,7 +209,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: none;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -297,7 +297,8 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 2.5rem;
+  padding: 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -850,8 +851,8 @@ a {
   display: grid;
   font-size: 2rem;
   font-weight: 600;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 6rem);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 6rem);
   justify-items: center;
   margin: 0 auto;
   max-width: 700px;
