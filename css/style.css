@@ -336,7 +336,7 @@ a {
   }
 }
 
-/*Cards*/
+/* Cards */
 
 .card {
   border-radius: 7px;
@@ -352,7 +352,6 @@ a {
 .card--primary .card__header {
   background: var(--color-primary);
   color: #fff;
-  padding-bottom: 4rem;
 }
 
 .card--secondary .card__header {
@@ -368,29 +367,17 @@ a {
   background: #02cdf1;
 }
 
-/*Plan*/
+/* Plans */
 
 .plan {
-  transition: transform 0.3s;
-}
-
-.plan:hover {
-  transform: scale(1.04);
-}
-
-.plan--popular {
-  transform: scale(1.05);
-}
-
-.plan--popular:hover {
-  transform: scale(1.2);
+  transition: transform 0.2s ease-out;
 }
 
 .plan__name {
   color: #fff;
-  margin-top: 0;
-  font-size: 2.4rem;
+  margin: 0;
   font-weight: 500;
+  font-size: 2.4rem;
 }
 
 .plan__price {
@@ -405,10 +392,10 @@ a {
 }
 
 .plan__description {
-  display: block;
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 1px;
+  display: block;
 }
 
 .plan .list__item {
@@ -425,28 +412,32 @@ a {
   display: inline-block;
   position: absolute;
   top: -6px;
-  right: 5%;
+  right: 3%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
-  .plan--popular:hover {
+  .plan--popular {
     transform: scale(1.1);
   }
-
   .plan__name {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
-
   .plan__price {
     font-size: 5rem;
   }
-
   .plan__billing-cycle {
     font-size: 1.6rem;
   }
-
   .plan__description {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -867,4 +858,15 @@ a {
   .domain-block__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plan Blocks */
+
+.block-plan .grid {
+  gap: 6rem 4rem;
+}
+
+.block-plan .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
