@@ -12,8 +12,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 }
 
 /*Typography*/
@@ -566,7 +564,7 @@ a {
   }
 
   .company-name {
-    font-size: 1.7;
+    font-size: 1.7rem;
   }
 
   .testimonial__image {
