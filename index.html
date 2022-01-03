@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav class="nav collapsible">
@@ -27,18 +28,18 @@
     <section class="block block--dark block--skewed-left hero">
         <div class="grid grid__1x2 container">
             <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for Pros</h1>
+                <h1 class="block__heading" data-aos="fade-right" data-aos-duration="1500">Cloud Hosting for Pros</h1>
                 <p class="hero__tagline">Deploy your website in less than 60 seconds.</p>
                 <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
             </header>
-            <picture>
+            <picture data-aos="zoom-in-up">
                 <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x">
                 <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x">
                 <img class="hero__image" src="images/banner.png" alt="">
             </picture>
         </div>
     </section>
-    <section class="block container block--domain">
+    <section class="block container block--domain" data-aos="fade-up">
         <header class="block__header">
             <h2 class="block__heading">Starting at $9 per month</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, corrupti!</p>
@@ -60,7 +61,7 @@
             <li>.xyz $10</li>
         </ul>
     </section>
-    <section class="block container block-plan">
+    <section class="block container block-plan" data-aos="flip-up">
         <div class="grid grid__1x3">
             <div class="plan">
                 <div class="card card--secondary">
@@ -130,7 +131,7 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, recusandae!</p>
         </header>
         <article class="grid grid__1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#easy"></use>
@@ -140,14 +141,14 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, accusantium. Blanditiis ea explicabo minima iste, quasi illo quae rerum saepe, dolorem temporibus fugiat voluptatum quisquam nam aperiam numquam est inventore!</p>
                 <a href="#" class="link-arrow">learn more</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-left" data-aos-duration="1000">
                 <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
                 <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x">
                 <img class="feature__image" src="images/easy@2x.jpg" alt="">
             </picture>
         </article>
         <article class="grid grid__1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-left">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#computer"></use>
@@ -157,14 +158,14 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, accusantium. Blanditiis ea explicabo minima iste, quasi illo quae rerum saepe, dolorem temporibus fugiat voluptatum quisquam nam aperiam numquam est inventore!</p>
                 <a href="#" class="link-arrow">learn more</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-right" data-aos-duration="1000">
                 <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
                 <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x">
                 <img class="feature__image" src="images/fast@2x.jpg" alt="">
             </picture>
         </article>
         <article class="grid grid__1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -174,14 +175,14 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, accusantium. Blanditiis ea explicabo minima iste, quasi illo quae rerum saepe, dolorem temporibus fugiat voluptatum quisquam nam aperiam numquam est inventore!</p>
                 <a href="#" class="link-arrow">learn more</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-left" data-aos-duration="1000">
                 <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
                 <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x">
                 <img class="feature__image" src="images/wordpress@2x.jpg" alt="">
             </picture>
         </article>
         <article class="grid grid__1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-left">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#clock"></use>
@@ -191,7 +192,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, accusantium. Blanditiis ea explicabo minima iste, quasi illo quae rerum saepe, dolorem temporibus fugiat voluptatum quisquam nam aperiam numquam est inventore!</p>
                 <a href="#" class="link-arrow">learn more</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-right" data-aos-duration="1000">
                 <source type="image/webp" srcset="images/support.webp 1x, images/support@2x.webp 2x">
                 <source type="image/jpg" srcset="images/support.jpg 1x, images/support@2x.jpg 2x">
                 <img class="feature__image" src="images/support@2x.jpg" alt="">
@@ -203,7 +204,7 @@
           <h2>User-friendly Control Panel</h2>
         </header>
         <div class="container grid grid--1x2">
-          <picture class="block-showcase__image">
+          <picture class="block-showcase__image" data-aos="fade-right" data-aos-duration="500">
             <source
               type="image/webp"
               srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -216,7 +217,7 @@
           </picture>
           <ul class="list">
             <li>
-              <div class="media">
+              <div class="media" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                 <div class="media__image">
                   <svg class="icon icon--primary">
                     <use xlink:href="images/sprite.svg#snap"></use>
@@ -233,7 +234,7 @@
               </div>
             </li>
             <li>
-              <div class="media">
+              <div class="media" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                 <div class="media__image">
                   <svg class="icon icon--primary">
                     <use xlink:href="images/sprite.svg#growth"></use>
@@ -250,7 +251,7 @@
               </div>
             </li>
             <li>
-              <div class="media">
+              <div class="media" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                 <div class="media__image">
                   <svg class="icon icon--primary">
                     <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -270,13 +271,13 @@
         </div>
       </section>
       <section class="block">
-        <header class="block__header">
+        <header class="block__header" data-aos="zoom-in">
             <h2>What our customers are saying</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, optio.</p>
         </header>
         <div class="container">
-            <div class="testimonial grid grid__1x2">
-                <div class="testimonial__image">
+            <div class="testimonial grid grid__1x2" data-aos="zoom-out" data-aos-duration="400">
+                <div class="testimonial__image" data-aos="zoom-in-down" data-aos-delay="400" data-aos-duration="400">
                     <img src="images/testimonial.jpg" alt="A happy smiling customer">
                     <span class="icon-container icon-container--accent">
                         <svg class="icon icon--white icon--small">
@@ -290,12 +291,12 @@
                     </p>
                     <footer class="quote__footer">
                         <div class="media">
-                            <div class="media__image">
+                            <div class="media__image" data-aos="fade-right" data-aos-delay="400" data-aos-duration="400">
                                 <img src="images/line.svg" alt="" class="icon icon--primary quote__line">
                             </div>
                             <div class="media__body">
-                                <h3 class="media__title quote__author">Jhone Lumeo</h3>
-                                <p class="company-name">Mosh Company ceo</p>
+                                <h3 class="media__title quote__author" data-aos="fade-up" data-aos-delay="800" data-aos-duration="400">Jhone Lumeo</h3>
+                                <p class="company-name" data-aos="fade-left" data-aos-delay="1200" data-aos-duration="400">Mosh Company ceo</p>
                             </div>
                         </div>
                     </footer>
@@ -303,7 +304,7 @@
             </div>
         </div>
     </section>
-    <footer class="block block--dark footer">
+    <footer class="block block--dark footer" data-aos="fade-up">
         <div class="container grid footer__sections">
             <section class="collapsible footer__section">
                 <header class="collapsible__header">
@@ -373,5 +374,9 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
