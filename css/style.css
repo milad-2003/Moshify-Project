@@ -556,6 +556,66 @@ a {
   right: -32px;
 }
 
+@media screen and (max-width: 400px) {
+  .icon--small {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon-container {
+    width: 40px;
+    height: 40px;
+  }
+
+  .quote {
+    font-size: 2rem;
+  }
+
+  .quote__author {
+    font-size: 2.1rem;
+  }
+
+  .company-name {
+    font-size: 1.4rem;
+  }
+
+  .testimonial .icon-container {
+    position: absolute;
+    top: 2.5rem;
+    right: -20px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .icon--small {
+    width: 12px;
+    height: 12px;
+  }
+
+  .icon-container {
+    width: 24px;
+    height: 24px;
+  }
+
+  .quote {
+    font-size: 1.5rem;
+  }
+
+  .quote__author {
+    font-size: 1.7rem;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .testimonial .icon-container {
+    position: absolute;
+    top: 2rem;
+    right: -12px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .quote {
     font-size: 2.4rem;
@@ -567,67 +627,6 @@ a {
 
   .company-name {
     font-size: 1.7rem;
-  }
-
-  .testimonial__image {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .testimonial .icon-container {
-    position: absolute;
-    top: 22rem;
-    right: -32px;
-  }
-}
-
-@media screen and (min-width: 880px) {
-  .testimonial .icon-container {
-    position: absolute;
-    top: 18rem;
-    right: -32px;
-  }
-}
-
-@media screen and (min-width: 915px) {
-  .testimonial .icon-container {
-    position: absolute;
-    top: 15rem;
-    right: -32px;
-  }
-}
-
-@media screen and (min-width: 985px) {
-  .testimonial .icon-container {
-    position: absolute;
-    top: 12rem;
-    right: -32px;
-  }
-}
-
-@media screen and (min-width: 1050px) {
-  .testimonial .icon-container {
-    position: absolute;
-    top: 9rem;
-    right: -32px;
-  }
-}
-
-@media screen and (min-width: 1140px) {
-  .testimonial .icon-container {
-    position: absolute;
-    top: 6rem;
-    right: -32px;
-  }
-}
-
-@media screen and (min-width: 1207px) {
-  .testimonial .icon-container {
-    position: absolute;
-    top: 3rem;
-    right: -32px;
   }
 }
 
