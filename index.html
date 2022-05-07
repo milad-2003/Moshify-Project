@@ -20,11 +20,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body onload="document.getElementById('loading').style.display = 'none'; document.getElementById('body').style.display = 'block';">
-    <div id="loading">
-        loading...
-    </div>
-    <div id="body" data-aos="fade-up" data-aos-duration="500">
+<body>
+    <header>
         <nav class="nav collapsible">
             <a href="/"><img class="logo" src="images/logo.svg" alt="Moshify Logo"></a>
             <svg class="icon icon--white nav__toggler">
@@ -51,6 +48,8 @@
                 </picture>
             </div>
         </section>
+    </header>
+    <main>
         <section class="block container block--domain" data-aos="fade-up">
             <header class="block__header">
                 <h2 class="block__heading">Starting at $9 per month</h2>
@@ -316,80 +315,80 @@
                 </div>
             </div>
         </section>
-        <footer class="block block--dark footer" data-aos="fade-up">
-            <div class="container grid footer__sections">
-                <section class="collapsible footer__section">
-                    <div class="collapsible__header">
-                      <h2 class="collapsible__heading footer__heading">products</h2>
-                      <svg class="icon icon--white collapsible__chevron">
-                        <use href="images/sprite.svg#chevron"></use>
-                      </svg>
-                    </div>
-                    <div class="collapsible__content">
-                      <ul class="list footer__list">
-                          <li><a href="#">Website Hosting</a></li>
-                          <li><a href="#">Free Automated</a></li>
-                          <li><a href="#">Wordpress</a></li>
-                          <li><a href="#">Migrations</a></li>
-                      </ul>
-                    </div>
-                </section>
-                <section class="collapsible footer__section">
-                    <div class="collapsible__header">
-                      <h2 class="collapsible__heading footer__heading">company</h2>
-                      <svg class="icon icon--white collapsible__chevron">
-                        <use href="images/sprite.svg#chevron"></use>
-                      </svg>
-                    </div>
-                    <div class="collapsible__content">
-                      <ul class="list footer__list">
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">Affiliates</a></li>
-                          <li><a href="#">Blog</a></li>
-                      </ul>
-                    </div>
-                </section>
-                <section class="collapsible footer__section">
-                    <div class="collapsible__header">
-                      <h2 class="collapsible__heading footer__heading">support</h2>
-                      <svg class="icon icon--white collapsible__chevron">
-                        <use href="images/sprite.svg#chevron"></use>
-                      </svg>
-                    </div>
-                    <div class="collapsible__content">
-                      <ul class="list footer__list">
-                          <li><a href="#">Contact</a></li>
-                          <li><a href="#">Knowledge Base</a></li>
-                          <li><a href="#">FAQ</a></li>
-                      </ul>
-                    </div>
-                </section>
-                <section class="collapsible footer__section">
-                    <div class="collapsible__header">
-                      <h2 class="collapsible__heading footer__heading">domains</h2>
-                      <svg class="icon icon--white collapsible__chevron">
-                        <use href="images/sprite.svg#chevron"></use>
-                      </svg>
-                    </div>
-                    <div class="collapsible__content">
-                      <ul class="list footer__list">
-                          <li><a href="#">Domain Checker</a></li>
-                          <li><a href="#">Domain Transfer</a></li>
-                          <li><a href="#">Free Domain</a></li>
-                      </ul>
-                    </div>
-                </section>
-                <div class="footer__brand">
-                    <img src="images/logo.svg" alt="The logo of Moshify">
-                    <p class="footer__copyright">Copyright &copy; 2020 Mosh Hamedani</p>
+    </main>
+    <footer class="block block--dark footer" data-aos="fade-up">
+        <div class="container grid footer__sections">
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">products</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use href="images/sprite.svg#chevron"></use>
+                  </svg>
                 </div>
+                <div class="collapsible__content">
+                  <ul class="list footer__list">
+                      <li><a href="#">Website Hosting</a></li>
+                      <li><a href="#">Free Automated</a></li>
+                      <li><a href="#">Wordpress</a></li>
+                      <li><a href="#">Migrations</a></li>
+                  </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">company</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </div>
+                <div class="collapsible__content">
+                  <ul class="list footer__list">
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Affiliates</a></li>
+                      <li><a href="#">Blog</a></li>
+                  </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">support</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </div>
+                <div class="collapsible__content">
+                  <ul class="list footer__list">
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Knowledge Base</a></li>
+                      <li><a href="#">FAQ</a></li>
+                  </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                  <h2 class="collapsible__heading footer__heading">domains</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use href="images/sprite.svg#chevron"></use>
+                  </svg>
+                </div>
+                <div class="collapsible__content">
+                  <ul class="list footer__list">
+                      <li><a href="#">Domain Checker</a></li>
+                      <li><a href="#">Domain Transfer</a></li>
+                      <li><a href="#">Free Domain</a></li>
+                  </ul>
+                </div>
+            </section>
+            <div class="footer__brand">
+                <img src="images/logo.svg" alt="The logo of Moshify">
+                <p class="footer__copyright">Copyright &copy; 2020 Mosh Hamedani</p>
             </div>
-        </footer>
-        <script src="js/main.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-    </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
